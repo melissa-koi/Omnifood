@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-weight: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+.row{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* HEADINGS */
+h1,h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 240%;
+    word-spacing: 4px
+}
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: centre;
+    margin-bottom: 30px;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: chocolate;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/* BUTTONS */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited{
+    background-color: chocolate;
+    color: white;
+    border: 1px solid chocolate;
+    margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: chocolate;
+    border: 1px solid chocolate;
+}
+.btn:hover,
+.btn:active {
+    background-color: rgb(200, 94, 17);
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid rgb(200, 94, 17);
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid rgb(200, 94, 17);
+    color:white;
+}
+/* END OF BUTTONS */
+
+/* HEADERS */
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.349)),url(cuisine.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    border-radius: 50%;
+    margin-top: 20px
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 3px solid chocolate;
+}
+.section{
+    padding: 80px;
+}
+.long-copy1{
+    float: left;
+}
+.long-copy2{
+    float: left;
+}
